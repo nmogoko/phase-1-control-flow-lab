@@ -16,15 +16,19 @@ else if (someValue >2500)
 
 function ternaryCheckCity(city){
   // Write your code here!
-
-//  city = ternaryCheckCity ? "Ok, sounds good.":
+return city === "NYC" ? "Ok, sounds good.": "No go." ;
 }
-// ternaryCheckCity(("NYC"))
 
-// ternaryCheckCity(("Pittsburgh"))
+ternaryCheckCity(("Pittsburgh"));
 
-function switchOnCharmFromTip(){
+function switchOnCharmFromTip(tip){
   // Write your code here!
-
-
-}
+switch (tip) {
+    case "generous": 
+          return "Thank you so much.";
+    case "not as generous" :
+      return "Thank you.";
+    default :
+      return "Bye."
+}}
+switchOnCharmFromTip("generous");
